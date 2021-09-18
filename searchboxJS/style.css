@@ -1,0 +1,22 @@
+#searchbar{
+    margin:5%;
+    text-align: center;
+    padding:20px;
+}
+
+#list{
+    font-size:2em;
+    margin-left:5%;
+}
+
+.animals{
+
+    display: list-item;
+}
+
+.btns{
+    margin:5%;
+    text-align: center;
+    padding:20px;
+    width:189px;
+}

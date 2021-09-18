@@ -1,0 +1,42 @@
+body {font-family: Allison;}
+body, html {height: 100%}
+.bgimg {
+  background-color: black;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.header{
+    background-color: pink;
+    font-size: 3rem;
+    
+    text-align: center;
+}
+
+.daysleft{
+    text-align: center;
+    font-size: 10vw;
+    margin: 15%;
+    color:pink;
+}
+
+.footer{
+    background-color: pink;
+    
+    text-align: center;
+    
+    
+}
+.section{
+    text-align:center;
+    background-color: pink;
+    margin-top: 45px;
+}
+body{
+    background-color:black;
+    
+}
+#hidden{
+    display:none;
+}
