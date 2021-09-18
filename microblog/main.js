@@ -191,11 +191,6 @@ const scoreUp = (e) => {
     const closestUp = e.target.closest(".vote").querySelector(".up-vote");
     const closestDown = e.target.closest(".vote").querySelector(".down-vote");
     const score = e.target.closest(".vote").querySelector(".number");
-    
-    console.log("score up");
-    console.log(upv);
-    console.log(dv);
-    //console.log(closestUp.style);
 
     if(upv == false && dv == false){
     closestUp.style.cssText = "color: lime";
@@ -203,25 +198,22 @@ const scoreUp = (e) => {
     upv=true;
     dv=false;
     score.innerHTML=parseInt(score.innerHTML)+1;
-    console.log("dupa uv 1");
 
-    //dodajemy 1 do score
     }else if(upv == true && dv == false){
         closestUp.style.cssText = "";
         closestDown.style.cssText = "";
         upv=false;
         dv=false;
         score.innerHTML=parseInt(score.innerHTML)-1;
-        console.log("dupa uv 2");
-    //odejmujemy 1 od score
+
+
     }else if(upv == false && dv ==true){
         closestUp.style.cssText = "color: lime";
         closestDown.style.cssText = "color: red";
         upv=true;
         dv=false;
         score.innerHTML=parseInt(score.innerHTML)+2;
-        console.log("dupa uv 3");
-    //dodajemy 2 do score
+
     }
     
     
@@ -242,10 +234,6 @@ const scoreUp = (e) => {
         dv=true;
         upv=false;
         score.innerHTML=parseInt(score.innerHTML)-1;
-        console.log("dupa dv 1");
-        console.log(closestDown.style.cssText);
-
-        //odejmujemy1 do score
     
     }else if(dv == true&&upv==false){
             closestUp.style.cssText = "";
@@ -253,16 +241,14 @@ const scoreUp = (e) => {
             dv=false;
             upv=false;
             score.innerHTML=parseInt(score.innerHTML)+1;
-            console.log("dupa dv 2");
-        //dodajemy1 od score
+
     }else if(dv == false && upv == true){
             closestDown.style.cssText = "color: lime";
             closestUp.style.cssText = "color: red";
             dv= true;
             upv=false;
             score.innerHTML=parseInt(score.innerHTML)-2;
-            console.log("dupa dv 3");
-        //odejmujemy 2 do score
+
         }
         
   };
