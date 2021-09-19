@@ -1,5 +1,5 @@
 var pressed = [];
-const konamiCode = 'injects3crets';
+const konamiCode = 'injects3cretsEnter';
 window.addEventListener('keyup',(e)=>{
     
     let timer;
